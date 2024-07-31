@@ -1,0 +1,125 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* similer design code */
+.primary-btn {
+    border: none;
+    background: rgba(133, 160, 25, 1);
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Header style here */
+
+header {
+    background: #FFFBF0;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    width: 300px;
+}
+.nav-items {
+    display: flex;
+}
+.nav-items li {
+    list-style: none;
+}
+.nav-items li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #3C3C3C;
+    font-weight: bold;
+}
+
+/* banner section start here */
+
+.banner-container {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.banner-container .diff-color {
+    color: #FABE4C;
+}
+
+/* women jacket card */
+.w-jacket-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.w-jacket {
+    height: 300px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.w-jacket img {
+    height: 150px;
+    width: 120px;
+    padding: 0 50px;
+
+}
+.w-jacket .dollar {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.w-jacket .dollar button {
+    border-radius: 5px;
+}
+
+/* footer part */
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.footer-left {
+    border: 1px solid tomato;
+}
+.footer-left img {
+    height: 100px;
+}
+.footer-right img {
+    height: 300px;
+    width: 400px;
+}
+/* Responsive design code start here */
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+    .nav-items {
+        flex-direction: column;
+    }
+    .w-jacket-container {
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .banner-container {
+        flex-direction: column;
+    }
+    
+
+}
+
+
+/* Responsive design code end here */
